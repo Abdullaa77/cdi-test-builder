@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/bundle-jspdf.js",
+    "predev": "node scripts/bundle-jspdf.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,10 +13,10 @@
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.80.0",
-    "jspdf": "^3.0.3",
+    "jspdf": "^4.2.0",
     "jszip": "^3.10.1",
     "lucide-react": "^0.544.0",
-    "next": "15.5.4",
+    "next": "^15.5.12",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

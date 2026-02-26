@@ -16,6 +16,7 @@ async function audioToBase64(file) {
 }
 import { generateAuthComponent, generateAuthStyles, generateAuthScript } from './authComponent'
 import { generateStartScreenComponent, generateStartScreenStyles, generateStartScreenScript } from './startScreenComponent'
+import { JSPDF_INLINE_SCRIPT } from './jspdfBundle'
 
 export async function generateListeningHTML(testData, projectName, answerKey, branding) {
   // Default branding values - handle null/undefined branding
@@ -618,7 +619,7 @@ console.log('Audio conversion complete')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${testData.title} - ${academy_name}</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    ${JSPDF_INLINE_SCRIPT}
     <style>
         :root {
             --primary-color: ${primary_color};

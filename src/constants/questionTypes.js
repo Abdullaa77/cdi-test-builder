@@ -28,9 +28,3 @@ export const readingQuestionTypes = [
   { id: 'sentence-completion', name: 'Sentence Completion' },
   { id: 'short-answer', name: 'Short-answer Questions' }
 ]
-
-export const LOGO_URLS = {
-  main: 'https://raw.githubusercontent.com/Abdullaa77/HOSTING-AUDIOS/main/logo%20(2).svg',
-  yellow: 'https://raw.githubusercontent.com/Abdullaa77/HOSTING-AUDIOS/main/Icon%20sariq.svg',
-  alternate: 'https://raw.githubusercontent.com/Abdullaa77/HOSTING-AUDIOS/main/Untitled.svg'
-}
